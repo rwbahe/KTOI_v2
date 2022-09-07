@@ -1,0 +1,165 @@
+@import "/_variables";
+@import "/_homepage";
+@import "/_sidepage";
+@import "/_about-history";
+@import "/_about-covenant";
+@import "/_about-elders";
+@import "/_about-contact";
+@import "/_gov-council";
+@import "/_gov-account";
+@import "/_gov-legal";
+@import "/_fish-history";
+@import "/_fish-projects";
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+body {
+    width: 1920px;
+    background-color: $default_2;
+}
+
+.page {
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+header {
+    #top {
+        height: 80px;
+        background-color: $header;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        #logo-container {
+            width: 220px;
+            height: 140px;
+            margin-top: 60px;
+            margin-left: 20px;
+            position: relative;
+            background: url(/images/logo_container-background.png);
+            z-index: 1;
+
+            #logo {
+                width: 70px;
+                height: 100px;
+                margin-top: 6px;
+                margin-left: 75px;
+                background: url(/images/logo.png);
+            }
+        }
+
+        #title {
+            margin-left: 20px;
+            color: #FFF;
+
+            h1 { font-size: 1.875rem; }
+            h2 { font-size: 1.5rem;}
+        }
+    }
+
+    #top-border-bottom {
+        width: 1100px;
+        height: 20px;
+        position: absolute;
+        background-image: url(/images/top_border-bottom.png);
+    }
+
+    #banner {
+        height: 340px;
+        background-color: $default_1;
+    }
+
+    #nav {
+        height: 70px;
+        border-top: 8px solid $border_1;
+        border-bottom: 8px solid $border_1;
+        background-color: $menu;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #nav-border-left {
+            width: 40px;
+            height: 70px;
+            background-image: url(/images/nav_border-left.png);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                height: 36px;
+
+                display: flex;
+                align-items: center;
+
+                a { 
+                    padding-left: 32px;
+                    padding-right: 32px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    border-right: 0.5px solid rgba(225, 255, 255, 0.25);
+                    font-size: 1.10rem;
+                    font-weight: bold; 
+                    letter-spacing: 0.5px;
+                    color: #FFF;
+                }
+
+                &:last-child {
+                    a {
+                        border: none;
+                    }
+                }
+
+                &:hover {
+                    background: $hover;
+                    transition: 0.25s;
+                }
+            }
+        }
+
+        #nav-border-right {
+            width: 40px;
+            height: 70px;
+            background-image: url(/images/nav_border-right.png);
+        }
+    }
+}
+
+footer {
+    height: 160px;
+    border-top: 8px solid $border_1;
+    background-color: $footer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    #info {
+        margin-left: 32px;
+        color: #808080;
+    }
+
+    #footer-logo {
+        width: 240px;
+        height: 160px;
+        background-image: url(/images/footer_logo.png);
+        margin-right: 32px;
+    }
+}
