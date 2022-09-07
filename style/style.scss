@@ -1,15 +1,6 @@
-@import "/_variables";
-@import "/_homepage";
-@import "/_sidepage";
-@import "/_about-history";
-@import "/_about-covenant";
-@import "/_about-elders";
-@import "/_about-contact";
-@import "/_gov-council";
-@import "/_gov-account";
-@import "/_gov-legal";
-@import "/_fish-history";
-@import "/_fish-projects";
+@import "./variables";
+@import "./_homepage";
+@import "./_sidepage";
 
 * {
     list-style: none;
