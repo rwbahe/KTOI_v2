@@ -40,7 +40,7 @@ header {
             margin-top: 60px;
             margin-left: 20px;
             position: relative;
-            background: url(images/logo_container-background.png);
+            background: url("images/logo_container-background.png");
             z-index: 1;
 
             #logo {
@@ -48,7 +48,7 @@ header {
                 height: 100px;
                 margin-top: 6px;
                 margin-left: 75px;
-                background: url(images/logo.png);
+                background: url("images/logo.png");
             }
         }
 
@@ -65,7 +65,7 @@ header {
         width: 1100px;
         height: 20px;
         position: absolute;
-        background-image: url(images/top_border-bottom.png);
+        background-image: url("images/top_border-bottom.png");
     }
 
     #banner {
@@ -86,7 +86,7 @@ header {
         #nav-border-left {
             width: 40px;
             height: 70px;
-            background-image: url(images/nav_border-left.png);
+            background-image: url("images/nav_border-left.png");
         }
 
         ul {
@@ -127,7 +127,7 @@ header {
         #nav-border-right {
             width: 40px;
             height: 70px;
-            background-image: url(images/nav_border-right.png);
+            background-image: url("images/nav_border-right.png");
         }
     }
 }
@@ -150,7 +150,7 @@ footer {
     #footer-logo {
         width: 240px;
         height: 160px;
-        background-image: url(images/footer_logo.png);
+        background-image: url("images/footer_logo.png");
         margin-right: 32px;
     }
 }
