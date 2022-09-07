@@ -7,7 +7,7 @@
     .submenu {
         width: 180px;
         background-color: $sidepage-submenu;
-        background-image: url("images/sidepage-submenu.png");
+        background-image: url(/images/sidepage-submenu.png);
         background-position: bottom;
         background-repeat: no-repeat;
 
@@ -48,7 +48,7 @@
                 #tag {
                     width: 6px;
                     height: 24px;
-                    background-image: url("images/submenu-link-tag.png");
+                    background-image: url(/images/submenu-link-tag.png);
                 }
             }
         }
@@ -61,7 +61,7 @@
         padding-left: 50px;
         padding-right: 50px;
         background-color: $sidepage-content;
-        background-image: url("images/sidepage_main-background.png");
+        background-image: url(/images/sidepage_main-background.png);
         background-position: bottom;
         background-repeat: no-repeat;
 

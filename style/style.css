@@ -1,6 +1,6 @@
 main {
   background-color: #FFF9F0;
-  background-image: url("images/homepage_main-background.png");
+  background-image: url(/images/homepage_main-background.png);
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -216,7 +216,7 @@ main #select #select-col_2 #select-col_2-row_2:hover {
 .sidepage-layout .submenu {
   width: 180px;
   background-color: rgba(255, 148, 0, 0.7);
-  background-image: url("images/sidepage-submenu.png");
+  background-image: url(/images/sidepage-submenu.png);
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -251,7 +251,7 @@ main #select #select-col_2 #select-col_2-row_2:hover {
 .sidepage-layout .submenu .submenu-container .link #tag {
   width: 6px;
   height: 24px;
-  background-image: url("images/submenu-link-tag.png");
+  background-image: url(/images/submenu-link-tag.png);
 }
 .sidepage-layout .content {
   width: 920px;
@@ -260,7 +260,7 @@ main #select #select-col_2 #select-col_2-row_2:hover {
   padding-left: 50px;
   padding-right: 50px;
   background-color: #FFF9F0;
-  background-image: url("images/sidepage_main-background.png");
+  background-image: url(/images/sidepage_main-background.png);
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -311,7 +311,7 @@ header #top #logo-container {
   margin-top: 60px;
   margin-left: 20px;
   position: relative;
-  background: url("images/logo_container-background.png");
+  background: url(/images/logo_container-background.png);
   z-index: 1;
 }
 header #top #logo-container #logo {
@@ -319,7 +319,7 @@ header #top #logo-container #logo {
   height: 100px;
   margin-top: 6px;
   margin-left: 75px;
-  background: url("images/logo.png");
+  background: url(/images/logo.png);
 }
 header #top #title {
   margin-left: 20px;
@@ -335,7 +335,7 @@ header #top-border-bottom {
   width: 1100px;
   height: 20px;
   position: absolute;
-  background-image: url("images/top_border-bottom.png");
+  background-image: url(/images/top_border-bottom.png);
 }
 header #banner {
   height: 340px;
@@ -353,7 +353,7 @@ header #nav {
 header #nav #nav-border-left {
   width: 40px;
   height: 70px;
-  background-image: url("images/nav_border-left.png");
+  background-image: url(/images/nav_border-left.png);
 }
 header #nav ul {
   display: flex;
@@ -385,7 +385,7 @@ header #nav ul li:hover {
 header #nav #nav-border-right {
   width: 40px;
   height: 70px;
-  background-image: url("images/nav_border-right.png");
+  background-image: url(/images/nav_border-right.png);
 }
 
 footer {
@@ -404,6 +404,6 @@ footer #info {
 footer #footer-logo {
   width: 240px;
   height: 160px;
-  background-image: url("images/footer_logo.png");
+  background-image: url(/images/footer_logo.png);
   margin-right: 32px;
 }/*# sourceMappingURL=style.css.map */
