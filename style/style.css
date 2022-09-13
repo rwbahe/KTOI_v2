@@ -1,11 +1,12 @@
 main {
+  width: 100%;
   background-color: #FFF9F0;
   background-image: url(/images/homepage_main-background.png);
   background-position: bottom;
   background-repeat: no-repeat;
 }
 main > div {
-  max-width: 760px;
+  width: 960px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -23,15 +24,16 @@ main #intro-title-acc {
   background-color: #F3930E;
 }
 main #intro {
-  height: 360px;
-  padding-top: 50px;
-  padding-bottom: 42px;
-  padding-left: 80px;
-  padding-right: 80px;
+  width: 100%;
   border-top: 8px solid #F3930E;
   background-color: #FFF;
   box-shadow: 0 0 32px #ccc;
   z-index: 1;
+}
+main #intro #intro-title {
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 main #intro #intro-title h2 {
   font-size: 3rem;
@@ -46,11 +48,17 @@ main #intro #intro-title h3 {
   margin-bottom: 30px;
   border-bottom: 2px solid #FFD800;
 }
+main #intro #intro-content {
+  margin-bottom: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
 main #intro #intro-content p {
+  font-size: 1rem;
   margin-bottom: 16px;
 }
 main #select {
-  width: 760px;
+  width: 100%;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -59,7 +67,8 @@ main #select {
 }
 main #select #select-col_1 {
   flex: 2.5;
-  height: 360px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   padding-left: 24px;
   padding-right: 24px;
   box-shadow: 0 0 32px #ccc;
@@ -71,7 +80,7 @@ main #select #select-col_1 {
 }
 main #select #select-col_1 #select-col_1-col_1 {
   flex: 1.75;
-  height: 300px;
+  height: 360px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -79,8 +88,7 @@ main #select #select-col_1 #select-col_1-col_1 {
 }
 main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1 {
   flex: 1;
-  height: 120px;
-  background-color: #B2B2B2;
+  background-image: url(/images/history-cover-placehold.jpg);
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -103,8 +111,7 @@ main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1:hover {
 }
 main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2 {
   flex: 1;
-  height: 120px;
-  background-color: #B2B2B2;
+  background-image: url(/images/covenant-cover-placehold.jpg);
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -127,8 +134,9 @@ main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2:hover {
 }
 main #select #select-col_1 #select-col_1-col_2 {
   flex: 1;
-  height: 300px;
-  background-color: #E6E6E6;
+  height: 360px;
+  background-image: url(/images/hatchery-cover-placehold.jpg);
+  background-position: center;
 }
 main #select #select-col_1 #select-col_1-col_2 #select_1_2-fishwild {
   width: 100%;
@@ -148,7 +156,7 @@ main #select #select-col_1 #select-col_1-col_2:hover {
 }
 main #select #select-col_2 {
   flex: 1;
-  height: 424px;
+  height: 480px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -157,8 +165,9 @@ main #select #select-col_2 #select-col_2-row_1 {
   height: 50%;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
-  transform: translateY(32px);
-  background-color: #E6E6E6;
+  transform: translateY(36px);
+  background-image: url(/images/hotel-cover-placehold.jpg);
+  background-position: center;
 }
 main #select #select-col_2 #select-col_2-row_1 #select_2_1-inn {
   width: 100%;
@@ -182,8 +191,9 @@ main #select #select-col_2 #select-col_2-row_2 {
   height: 50%;
   -webkit-clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
-  transform: translateY(-32px);
-  background-color: #B2B2B2;
+  transform: translateY(-36px);
+  background-image: url(/images/resort-cover-placehold.jpg);
+  background-position: center;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -208,34 +218,33 @@ main #select #select-col_2 #select-col_2-row_2:hover {
   z-index: 1;
 }
 
-.sidepage-layout {
-  max-width: 1100px;
+.sidepage-container {
+  background-color: #FFF9F0;
+  background-image: url(/images/default_background-1.png);
+  margin: 0 auto;
+}
+.sidepage-container .sidepage-layout {
+  width: 62.5%; /* 1200px / 1920px */
+  margin: 0 auto;
+  background-color: #FFF;
   display: flex;
   flex-direction: row;
 }
-.sidepage-layout .submenu {
-  width: 180px;
-  background-color: rgba(255, 148, 0, 0.7);
-  background-image: url(/images/sidepage-submenu.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
+.sidepage-container .sidepage-layout .submenu {
+  width: 200px;
+  padding-top: 50px;
+  background-color: #444;
 }
-.sidepage-layout .submenu .submenu-container div {
+.sidepage-container .sidepage-layout .submenu .submenu-container div {
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sidepage-layout .submenu .submenu-container .chapter-title {
-  background-color: #FFF9F0;
+.sidepage-container .sidepage-layout .submenu .submenu-container .link {
+  background-color: #333;
 }
-.sidepage-layout .submenu .submenu-container .chapter-title h2 {
-  font-size: 1.1rem;
-}
-.sidepage-layout .submenu .submenu-container .link {
-  background-color: #383838;
-}
-.sidepage-layout .submenu .submenu-container .link a {
+.sidepage-container .sidepage-layout .submenu .submenu-container .link a {
   width: 100%;
   height: 100%;
   font-size: 1rem;
@@ -244,34 +253,31 @@ main #select #select-col_2 #select-col_2-row_2:hover {
   justify-content: center;
   align-items: center;
 }
-.sidepage-layout .submenu .submenu-container .link:hover {
+.sidepage-container .sidepage-layout .submenu .submenu-container .link:hover {
   background: rgba(80, 80, 80, 0.5);
   transition: 0.25s;
 }
-.sidepage-layout .submenu .submenu-container .link #tag {
+.sidepage-container .sidepage-layout .submenu .submenu-container .link #tag {
   width: 6px;
   height: 24px;
   background-image: url(/images/submenu-link-tag.png);
 }
-.sidepage-layout .content {
-  width: 920px;
-  padding-top: 30px;
+.sidepage-container .sidepage-layout .content {
+  width: 100%;
+  padding-top: 50px;
   padding-bottom: 30px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: #FFF9F0;
-  background-image: url(/images/sidepage_main-background.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
 }
-.sidepage-layout .content h1 {
+.sidepage-container .sidepage-layout .content h1 {
   display: inline-block;
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 16px;
   margin-bottom: 32px;
   border-bottom: 2px solid #FFD800;
 }
-.sidepage-layout .content p {
+.sidepage-container .sidepage-layout .content p {
   margin-bottom: 32px;
 }
 
@@ -287,20 +293,23 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 body {
-  width: 1920px;
-  background-color: #B2B2B2;
+  margin: 0 auto;
 }
 
 .page {
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
+header {
+  background-color: #1F2A4F;
+}
 header #top {
+  width: 62.5%; /* 1200px / 1920px */
+  max-width: 1200px;
   height: 80px;
   background-color: #1F2A4F;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -309,9 +318,8 @@ header #top #logo-container {
   width: 220px;
   height: 140px;
   margin-top: 60px;
-  margin-left: 20px;
-  position: relative;
-  background: url(/images/logo_container-background.png);
+  margin-left: 1.04166667%; /* 20px / 1920px */
+  background-image: url(/images/logo_container-background.png);
   z-index: 1;
 }
 header #top #logo-container #logo {
@@ -332,39 +340,55 @@ header #top #title h2 {
   font-size: 1.5rem;
 }
 header #top-border-bottom {
-  width: 1100px;
+  width: 100%;
+  max-width: 1920px;
   height: 20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
   background-image: url(/images/top_border-bottom.png);
 }
 header #banner {
-  height: 340px;
-  background-color: #E6E6E6;
+  width: 100%;
+  max-width: 1920px;
+  height: 360px;
+  margin: 0 auto;
+  background-image: url(/images/banner-background-placehold.jpg);
+  background-position: center;
 }
 header #nav {
+  width: 100%;
   height: 70px;
   border-top: 8px solid #262626;
   border-bottom: 8px solid #262626;
+  background-color: #DB840B;
+  margin: 0 auto;
+}
+header #nav #nav-container {
+  width: 62.5%; /* 1200px / 1920px */
+  margin: 0 auto;
   background-color: #F3930E;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header #nav #nav-border-left {
+header #nav #nav-container #nav-border-left {
   width: 40px;
   height: 70px;
   background-image: url(/images/nav_border-left.png);
 }
-header #nav ul {
+header #nav #nav-container ul {
   display: flex;
   flex-direction: row;
 }
-header #nav ul li {
+header #nav #nav-container ul li {
   height: 36px;
   display: flex;
   align-items: center;
 }
-header #nav ul li a {
+header #nav #nav-container ul li a {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 8px;
@@ -375,35 +399,71 @@ header #nav ul li a {
   letter-spacing: 0.5px;
   color: #FFF;
 }
-header #nav ul li:last-child a {
+header #nav #nav-container ul li:last-child a {
   border: none;
 }
-header #nav ul li:hover {
+header #nav #nav-container ul li:hover {
   background: rgba(80, 80, 80, 0.5);
   transition: 0.25s;
 }
-header #nav #nav-border-right {
+header #nav #nav-container #nav-border-right {
   width: 40px;
   height: 70px;
   background-image: url(/images/nav_border-right.png);
 }
 
 footer {
-  height: 160px;
+  width: 100%;
+  height: 140px;
   border-top: 8px solid #262626;
   background-color: #25354B;
+  margin: 0 auto;
+}
+footer #footer-container {
+  width: 62.5%; /* 1200px / 1920px */
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-footer #info {
+footer #footer-container #info {
   margin-left: 32px;
   color: #808080;
 }
-footer #footer-logo {
+footer #footer-container #footer-logo {
   width: 240px;
-  height: 160px;
+  height: 140px;
   background-image: url(/images/footer_logo.png);
   margin-right: 32px;
+}
+
+@media screen and (max-width: 1536px) {
+  header #nav #nav-container ul li a {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  header #top {
+    width: 80%;
+  }
+  header #nav #nav-container {
+    width: 80%;
+  }
+  footer #footer-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 962px) {
+  header #top {
+    width: 100%;
+  }
+  header #nav #nav-container {
+    width: 100%;
+  }
+  footer #footer-container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

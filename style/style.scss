@@ -14,21 +14,23 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 body {
-    width: 1920px;
-    background-color: $default_2;
+    margin: 0 auto;
 }
 
 .page {
-    width: 1100px;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 32px;
-    margin-bottom: 32px;
 }
 
 header {
+    background-color: $header;
+
     #top {
+        width: 62.5%; /* 1200px / 1920px */
+        max-width: 1200px;
         height: 80px;
         background-color: $header;
+        margin: 0 auto;
 
         display: flex;
         align-items: center;
@@ -38,9 +40,8 @@ header {
             width: 220px;
             height: 140px;
             margin-top: 60px;
-            margin-left: 20px;
-            position: relative;
-            background: url(/images/logo_container-background.png);
+            margin-left: 1.04166667%; /* 20px / 1920px */
+            background-image: url(/images/logo_container-background.png);
             z-index: 1;
 
             #logo {
@@ -62,95 +63,179 @@ header {
     }
 
     #top-border-bottom {
-        width: 1100px;
+        width: 100%;
+        max-width: 1920px;
         height: 20px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
         position: absolute;
         background-image: url(/images/top_border-bottom.png);
     }
 
     #banner {
-        height: 340px;
-        background-color: $default_1;
+        width: 100%;
+        max-width: 1920px;
+        height: 360px;
+        margin: 0 auto;
+        background-image: url(/images/banner-background-placehold.jpg);
+        background-position: center;
     }
 
     #nav {
+        width: 100%;
         height: 70px;
         border-top: 8px solid $border_1;
         border-bottom: 8px solid $border_1;
-        background-color: $menu;
+        background-color: $menu_acc;
+        margin: 0 auto;
+        
+        #nav-container {
+            width: 62.5%; /* 1200px / 1920px */
+            margin: 0 auto;
+            background-color: $menu;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        #nav-border-left {
-            width: 40px;
-            height: 70px;
-            background-image: url(/images/nav_border-left.png);
-        }
-
-        ul {
             display: flex;
-            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
 
-            li {
-                height: 36px;
-
+            #nav-border-left {
+                width: 40px;
+                height: 70px;
+                background-image: url(/images/nav_border-left.png);
+            }
+    
+            ul {
                 display: flex;
-                align-items: center;
+                flex-direction: row;
+    
+                li {
+                    height: 36px;
+    
+                    display: flex;
+                    align-items: center;
+    
+                    a { 
+                        padding-left: 32px;
+                        padding-right: 32px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        border-right: 0.5px solid rgba(225, 255, 255, 0.25);
+                        font-size: 1.10rem;
+                        font-weight: bold; 
+                        letter-spacing: 0.5px;
+                        color: #FFF;
+                    }
 
-                a { 
-                    padding-left: 32px;
-                    padding-right: 32px;
-                    padding-top: 8px;
-                    padding-bottom: 8px;
-                    border-right: 0.5px solid rgba(225, 255, 255, 0.25);
-                    font-size: 1.10rem;
-                    font-weight: bold; 
-                    letter-spacing: 0.5px;
-                    color: #FFF;
-                }
-
-                &:last-child {
-                    a {
-                        border: none;
+                    &:last-child {
+                        a {
+                            border: none;
+                        }
+                    }
+    
+                    &:hover {
+                        background: $hover;
+                        transition: 0.25s;
                     }
                 }
-
-                &:hover {
-                    background: $hover;
-                    transition: 0.25s;
-                }
             }
-        }
-
-        #nav-border-right {
-            width: 40px;
-            height: 70px;
-            background-image: url(/images/nav_border-right.png);
+    
+            #nav-border-right {
+                width: 40px;
+                height: 70px;
+                background-image: url(/images/nav_border-right.png);
+            }
         }
     }
 }
 
 footer {
-    height: 160px;
+    width: 100%;
+    height: 140px;
     border-top: 8px solid $border_1;
     background-color: $footer;
+    margin: 0 auto;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+    #footer-container {
+        width: 62.5%; /* 1200px / 1920px */
+        max-width: 1200px;
+        margin: 0 auto;
 
-    #info {
-        margin-left: 32px;
-        color: #808080;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        
+        #info {
+            margin-left: 32px;
+            color: #808080;
+        }
+    
+        #footer-logo {
+            width: 240px;
+            height: 140px;
+            background-image: url(/images/footer_logo.png);
+            margin-right: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    header {
+        #nav {
+            #nav-container {
+                ul {
+                    li {
+                        a {
+                            padding-left: 24px;
+                            padding-right: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    header {
+        #top {
+            width: 80%;
+        }
+
+        #nav {
+            #nav-container {
+                width: 80%;
+            }
+        }
+        
     }
 
-    #footer-logo {
-        width: 240px;
-        height: 160px;
-        background-image: url(/images/footer_logo.png);
-        margin-right: 32px;
+    footer {
+        #footer-container {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 962px) {
+    header {
+        #top {
+            width: 100%;
+        }
+
+        #nav {
+            #nav-container {
+                width: 100%;
+            }
+        }
+        
+    }
+
+    footer {
+        #footer-container {
+            width: 100%;
+        }
     }
 }

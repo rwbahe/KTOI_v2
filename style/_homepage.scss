@@ -1,11 +1,12 @@
 main {
+    width: 100%;
     background-color: $main;
     background-image: url(/images/homepage_main-background.png);
     background-position: bottom;
     background-repeat: no-repeat;
 
     > div {
-        max-width: 760px;
+        width: 960px;
         margin: 0 auto;
         padding-top: 60px;
         padding-bottom: 60px;
@@ -26,17 +27,17 @@ main {
     }
 
     #intro {
-        height: 360px;
-        padding-top: 50px;
-        padding-bottom: 42px;
-        padding-left: 80px;
-        padding-right: 80px;
+        width: 100%;
         border-top: 8px solid $border_2;
         background-color: #FFF;
         box-shadow: $box-soft-shadow;
         z-index: 1;
 
         #intro-title {
+            margin-top: 50px;
+            margin-left: 80px;
+            margin-right: 80px;
+
             h2 { 
                 font-size: 3rem; 
                 font-weight: 400;
@@ -53,14 +54,19 @@ main {
         }
 
         #intro-content {
+            margin-bottom: 50px;
+            margin-left: 80px;
+            margin-right: 80px;
+
             p {
+                font-size: 1rem;
                 margin-bottom: 16px;
             }
         }
     }
 
     #select {
-        width: 760px; //placeholder
+        width: 100%;
         z-index: 1;
 
         display: flex;
@@ -70,7 +76,8 @@ main {
 
         #select-col_1 {
             flex: 2.5;
-            height: 360px;   
+            padding-top: 24px;
+            padding-bottom: 24px;
             padding-left: 24px;
             padding-right: 24px;
             box-shadow: $box-soft-shadow;
@@ -83,7 +90,7 @@ main {
 
             #select-col_1-col_1 {
                 flex: 1.75;
-                height: 300px;
+                height: 360px;
 
                 display: flex;
                 justify-content: center;
@@ -92,8 +99,7 @@ main {
 
                 #select-col_1-col_1-row_1 {
                     flex: 1;
-                    height: 120px;
-                    background-color: $default_2;
+                    background-image: url(/images/history-cover-placehold.jpg);
 
                     display: flex;
                     justify-content: flex-end;
@@ -122,8 +128,7 @@ main {
 
                 #select-col_1-col_1-row_2 {
                     flex: 1;
-                    height: 120px;
-                    background-color: $default_2;
+                    background-image: url(/images/covenant-cover-placehold.jpg);
                     
                     display: flex;
                     justify-content: flex-end;
@@ -153,8 +158,9 @@ main {
 
             #select-col_1-col_2 {
                 flex: 1;
-                height: 300px;
-                background-color: $default_1;
+                height: 360px;
+                background-image: url(/images/hatchery-cover-placehold.jpg);
+                background-position: center;
 
                 #select_1_2-fishwild {
                     width: 100%;
@@ -180,7 +186,7 @@ main {
 
         #select-col_2 {
             flex: 1;
-            height: 424px;
+            height: 480px;
 
             display: flex;
             justify-content: space-between;
@@ -189,8 +195,9 @@ main {
             #select-col_2-row_1 {
                 height: 50%;
                 clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
-                transform: translateY(32px);
-                background-color: $default_1;
+                transform: translateY(36px);
+                background-image: url(/images/hotel-cover-placehold.jpg);
+                background-position: center;
 
                 #select_2_1-inn {
                     width: 100%;
@@ -218,8 +225,9 @@ main {
             #select-col_2-row_2 {
                 height: 50%;
                 clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
-                transform: translateY(-32px);
-                background-color: $default_2;
+                transform: translateY(-36px);
+                background-image: url(/images/resort-cover-placehold.jpg);
+                background-position: center;
 
                 display: flex;
                 justify-content: flex-end;
