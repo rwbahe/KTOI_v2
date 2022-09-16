@@ -1,7 +1,7 @@
 main {
     width: 100%;
     background-color: $main;
-    background-image: url(/images/homepage_main-background.png);
+    background-image: url(images/homepage_main-background.png);
     background-position: bottom;
     background-repeat: no-repeat;
 
@@ -100,7 +100,7 @@ main {
     
                     #select-col_1-col_1-row_1 {
                         flex: 1;
-                        background-image: url(/images/history-cover-placehold.jpg);
+                        background-image: url(images/history-cover-placehold.jpg);
     
                         display: flex;
                         justify-content: flex-end;
@@ -129,7 +129,7 @@ main {
     
                     #select-col_1-col_1-row_2 {
                         flex: 1;
-                        background-image: url(/images/covenant-cover-placehold.jpg);
+                        background-image: url(images/covenant-cover-placehold.jpg);
                         
                         display: flex;
                         justify-content: flex-end;
@@ -160,7 +160,7 @@ main {
                 #select-col_1-col_2 {
                     flex: 1;
                     height: 360px;
-                    background-image: url(/images/hatchery-cover-placehold.jpg);
+                    background-image: url(images/hatchery-cover-placehold.jpg);
                     background-position: center;
     
                     #select_1_2-fishwild {
@@ -197,7 +197,7 @@ main {
                     height: 50%;
                     clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
                     transform: translateY(36px);
-                    background-image: url(/images/hotel-cover-placehold.jpg);
+                    background-image: url(images/hotel-cover-placehold.jpg);
                     background-position: center;
     
                     #select_2_1-inn {
@@ -227,7 +227,7 @@ main {
                     height: 50%;
                     clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
                     transform: translateY(-36px);
-                    background-image: url(/images/resort-cover-placehold.jpg);
+                    background-image: url(images/resort-cover-placehold.jpg);
                     background-position: center;
     
                     display: flex;
