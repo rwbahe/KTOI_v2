@@ -5,8 +5,9 @@ main {
   background-position: bottom;
   background-repeat: no-repeat;
 }
-main > div {
-  width: 960px;
+main #main-content-container {
+  width: 50%; /* 960px / 1920px*/
+  max-width: 960px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -15,7 +16,19 @@ main > div {
   align-items: center;
   flex-direction: column;
 }
-main #intro-title-acc {
+main #main-content-container #intro {
+  width: 100%;
+  border-top: 8px solid #F3930E;
+  background-color: #FFF;
+  box-shadow: 0 0 32px #ccc;
+  z-index: 1;
+}
+main #main-content-container #intro #intro-title {
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+main #main-content-container #intro #intro-title #intro-title-acc {
   width: 6px;
   height: 32px;
   margin-left: -80px;
@@ -23,24 +36,12 @@ main #intro-title-acc {
   position: absolute;
   background-color: #F3930E;
 }
-main #intro {
-  width: 100%;
-  border-top: 8px solid #F3930E;
-  background-color: #FFF;
-  box-shadow: 0 0 32px #ccc;
-  z-index: 1;
-}
-main #intro #intro-title {
-  margin-top: 50px;
-  margin-left: 80px;
-  margin-right: 80px;
-}
-main #intro #intro-title h2 {
+main #main-content-container #intro #intro-title h2 {
   font-size: 3rem;
   font-weight: 400;
   padding-bottom: 8px;
 }
-main #intro #intro-title h3 {
+main #main-content-container #intro #intro-title h3 {
   width: 300px;
   font-size: 1.5rem;
   font-weight: 400;
@@ -48,24 +49,25 @@ main #intro #intro-title h3 {
   margin-bottom: 30px;
   border-bottom: 2px solid #FFD800;
 }
-main #intro #intro-content {
+main #main-content-container #intro #intro-content {
   margin-bottom: 50px;
   margin-left: 80px;
   margin-right: 80px;
 }
-main #intro #intro-content p {
+main #main-content-container #intro #intro-content p {
   font-size: 1rem;
   margin-bottom: 16px;
 }
-main #select {
+main #main-content-container #select {
   width: 100%;
+  height: 100%;
   z-index: 1;
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 24px;
 }
-main #select #select-col_1 {
+main #main-content-container #select #select-col_1 {
   flex: 2.5;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -78,7 +80,7 @@ main #select #select-col_1 {
   flex-direction: row;
   gap: 24px;
 }
-main #select #select-col_1 #select-col_1-col_1 {
+main #main-content-container #select #select-col_1 #select-col_1-col_1 {
   flex: 1.75;
   height: 360px;
   display: flex;
@@ -86,82 +88,82 @@ main #select #select-col_1 #select-col_1-col_1 {
   flex-direction: column;
   gap: 24px;
 }
-main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1 {
+main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1 {
   flex: 1;
   background-image: url(/images/history-cover-placehold.jpg);
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
 }
-main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1 #select_1_1_1-history {
+main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1 #select_1_1_1-history {
   width: 100%;
   height: 30px;
   background-color: rgba(50, 50, 50, 0.75);
   display: flex;
   align-items: center;
 }
-main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1 #select_1_1_1-history h4 {
+main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1 #select_1_1_1-history h4 {
   margin-left: 8px;
   font-weight: 400;
   color: #FFF;
 }
-main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1:hover {
+main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1:hover {
   transform: scale(1.05);
   transition: 0.25s;
 }
-main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2 {
+main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2 {
   flex: 1;
   background-image: url(/images/covenant-cover-placehold.jpg);
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
 }
-main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2 #select_1_1_2-covenant {
+main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2 #select_1_1_2-covenant {
   width: 100%;
   height: 30px;
   background-color: rgba(50, 50, 50, 0.75);
   display: flex;
   align-items: center;
 }
-main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2 #select_1_1_2-covenant h4 {
+main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2 #select_1_1_2-covenant h4 {
   margin-left: 8px;
   font-weight: 400;
   color: #FFF;
 }
-main #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2:hover {
+main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2:hover {
   transform: scale(1.05);
   transition: 0.25s;
 }
-main #select #select-col_1 #select-col_1-col_2 {
+main #main-content-container #select #select-col_1 #select-col_1-col_2 {
   flex: 1;
   height: 360px;
   background-image: url(/images/hatchery-cover-placehold.jpg);
   background-position: center;
 }
-main #select #select-col_1 #select-col_1-col_2 #select_1_2-fishwild {
+main #main-content-container #select #select-col_1 #select-col_1-col_2 #select_1_2-fishwild {
   width: 100%;
   height: 30px;
   background-color: rgba(50, 50, 50, 0.75);
   display: flex;
   align-items: center;
 }
-main #select #select-col_1 #select-col_1-col_2 #select_1_2-fishwild h4 {
+main #main-content-container #select #select-col_1 #select-col_1-col_2 #select_1_2-fishwild h4 {
   margin-left: 8px;
   font-weight: 400;
   color: #FFF;
 }
-main #select #select-col_1 #select-col_1-col_2:hover {
+main #main-content-container #select #select-col_1 #select-col_1-col_2:hover {
   transform: scale(1.05);
   transition: 0.25s;
 }
-main #select #select-col_2 {
+main #main-content-container #select #select-col_2 {
   flex: 1;
   height: 480px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-main #select #select-col_2 #select-col_2-row_1 {
+main #main-content-container #select #select-col_2 #select-col_2-row_1 {
   height: 50%;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
@@ -169,25 +171,25 @@ main #select #select-col_2 #select-col_2-row_1 {
   background-image: url(/images/hotel-cover-placehold.jpg);
   background-position: center;
 }
-main #select #select-col_2 #select-col_2-row_1 #select_2_1-inn {
+main #main-content-container #select #select-col_2 #select-col_2-row_1 #select_2_1-inn {
   width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
 }
-main #select #select-col_2 #select-col_2-row_1 #select_2_1-inn h4 {
+main #main-content-container #select #select-col_2 #select-col_2-row_1 #select_2_1-inn h4 {
   margin-left: 12px;
   font-weight: 400;
-  color: #000;
+  color: #FFF;
 }
-main #select #select-col_2 #select-col_2-row_1:hover {
+main #main-content-container #select #select-col_2 #select-col_2-row_1:hover {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   transform: translateY(32px) scale(1.05);
   transition: 0.25s;
   z-index: 1;
 }
-main #select #select-col_2 #select-col_2-row_2 {
+main #main-content-container #select #select-col_2 #select-col_2-row_2 {
   height: 50%;
   -webkit-clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
@@ -198,22 +200,22 @@ main #select #select-col_2 #select-col_2-row_2 {
   justify-content: flex-end;
   flex-direction: column;
 }
-main #select #select-col_2 #select-col_2-row_2 #select_2_2-resort {
+main #main-content-container #select #select-col_2 #select-col_2-row_2 #select_2_2-resort {
   width: 100%;
   height: 40px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-main #select #select-col_2 #select-col_2-row_2 #select_2_2-resort h4 {
+main #main-content-container #select #select-col_2 #select-col_2-row_2 #select_2_2-resort h4 {
   margin-right: 12px;
   font-weight: 400;
-  color: #000;
+  color: #FFF;
 }
-main #select #select-col_2 #select-col_2-row_2:hover {
+main #main-content-container #select #select-col_2 #select-col_2-row_2:hover {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  transform: translateY(-32px) scale(1.05);
+  transform: translateY(-30px) scale(1.05);
   transition: 0.25s;
   z-index: 1;
 }
@@ -247,7 +249,7 @@ main #select #select-col_2 #select-col_2-row_2:hover {
 .sidepage-container .sidepage-layout .submenu .submenu-container .link a {
   width: 100%;
   height: 100%;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #FFF;
   display: flex;
   justify-content: center;
@@ -266,8 +268,6 @@ main #select #select-col_2 #select-col_2-row_2:hover {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
   background-color: #FFF9F0;
 }
 .sidepage-container .sidepage-layout .content h1 {
@@ -275,10 +275,15 @@ main #select #select-col_2 #select-col_2-row_2:hover {
   font-size: 3rem;
   padding-bottom: 16px;
   margin-bottom: 32px;
+  margin-left: 50px;
+  margin-right: 50px;
   border-bottom: 2px solid #FFD800;
 }
 .sidepage-container .sidepage-layout .content p {
   margin-bottom: 32px;
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow-wrap: break-word;
 }
 
 * {
@@ -330,7 +335,7 @@ header #top #logo-container #logo {
   background: url(/images/logo.png);
 }
 header #top #title {
-  margin-left: 20px;
+  margin-left: 1.04166667%; /* 20px / 1920px */
   color: #FFF;
 }
 header #top #title h1 {
@@ -380,6 +385,8 @@ header #nav #nav-container #nav-border-left {
   background-image: url(/images/nav_border-left.png);
 }
 header #nav #nav-container ul {
+  padding: 0px;
+  margin: 0px;
   display: flex;
   flex-direction: row;
 }
@@ -396,7 +403,7 @@ header #nav #nav-container ul li a {
   border-right: 0.5px solid rgba(225, 255, 255, 0.25);
   font-size: 1.1rem;
   font-weight: bold;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
   color: #FFF;
 }
 header #nav #nav-container ul li:last-child a {
@@ -444,6 +451,9 @@ footer #footer-container #footer-logo {
     padding-left: 24px;
     padding-right: 24px;
   }
+  main #main-content-container {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 1440px) {
   header #top {
@@ -451,6 +461,9 @@ footer #footer-container #footer-logo {
   }
   header #nav #nav-container {
     width: 80%;
+  }
+  .sidepage-container .sidepage-layout {
+    width: 75%;
   }
   footer #footer-container {
     width: 80%;
@@ -460,10 +473,277 @@ footer #footer-container #footer-logo {
   header #top {
     width: 100%;
   }
+  header #banner {
+    height: 260px;
+  }
   header #nav #nav-container {
     width: 100%;
+  }
+  main #main-content-container {
+    width: 80%;
+  }
+  .sidepage-container .sidepage-layout {
+    width: 100%;
+  }
+  .sidepage-container .sidepage-layout .submenu .submenu-container .link a {
+    font-size: 0.875rem;
   }
   footer #footer-container {
     width: 100%;
   }
+}
+@media screen and (max-width: 800px) {
+  header #nav #nav-container ul li a {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 1rem;
+  }
+  main #main-content-container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 601px) {
+  header #top #title h1 {
+    font-size: 1.5rem;
+  }
+  header #top #title h2 {
+    font-size: 1.25rem;
+  }
+  header #nav #nav-container ul li a {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  main #main-content-container #intro #intro-title {
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  main #main-content-container #intro #intro-title #intro-title-acc {
+    margin-left: -60px;
+  }
+  main #main-content-container #intro #intro-content {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  main #main-content-container #select #select-col_1 {
+    flex: 1.5;
+  }
+  main #main-content-container #select #select-col_1 #select-col_1-col_2 {
+    display: none;
+  }
+  .sidepage-container .sidepage-layout .submenu {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 414px) {
+  header #top #logo-container {
+    transform: scale(0.9);
+    margin-top: 44px;
+  }
+  header #banner {
+    height: 220px;
+  }
+  header #nav {
+    height: 100%;
+  }
+  header #nav #nav-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+  header #nav #nav-container ul {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    flex-direction: column;
+  }
+  header #nav #nav-container ul li {
+    height: 50px;
+    justify-content: center;
+  }
+  header #nav #nav-container ul li a {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 0.875rem;
+    border: none;
+  }
+  main #main-content-container {
+    padding-top: 32px;
+  }
+  main #main-content-container #intro #intro-title {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  main #main-content-container #intro #intro-title #intro-title-acc {
+    margin-left: -48px;
+    margin-top: 3px;
+  }
+  main #main-content-container #intro #intro-title h2 {
+    font-size: 2.25rem;
+  }
+  main #main-content-container #intro #intro-title h3 {
+    width: 240px;
+    font-size: 1.25rem;
+  }
+  main #main-content-container #intro #intro-content {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  main #main-content-container #intro #intro-content p {
+    font-size: 0.875rem;
+  }
+  main #main-content-container #select {
+    margin-top: 24px;
+    flex-direction: column;
+  }
+  main #main-content-container #select #select-col_1 {
+    width: 86.2%;
+  }
+  main #main-content-container #select #select-col_1 #select-col_1-col_1 {
+    height: 300px;
+  }
+  main #main-content-container #select #select-col_2 {
+    width: 86.2%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #FFF;
+    flex-direction: row;
+    gap: 24px;
+  }
+  main #main-content-container #select #select-col_2 #select-col_2-row_1 {
+    flex: 1;
+    height: 160px;
+    -webkit-clip-path: none;
+            clip-path: none;
+    transform: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  main #main-content-container #select #select-col_2 #select-col_2-row_1 #select_2_1-inn {
+    background-color: rgba(50, 50, 50, 0.75);
+  }
+  main #main-content-container #select #select-col_2 #select-col_2-row_1 #select_2_1-inn h4 {
+    margin: 0 auto;
+    font-size: 0.875rem;
+  }
+  main #main-content-container #select #select-col_2 #select-col_2-row_1:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
+  }
+  main #main-content-container #select #select-col_2 #select-col_2-row_2 {
+    flex: 1;
+    height: 160px;
+    -webkit-clip-path: none;
+            clip-path: none;
+    transform: none;
+  }
+  main #main-content-container #select #select-col_2 #select-col_2-row_2 #select_2_2-resort {
+    background-color: rgba(50, 50, 50, 0.75);
+  }
+  main #main-content-container #select #select-col_2 #select-col_2-row_2 #select_2_2-resort h4 {
+    margin: 0 auto;
+    font-size: 0.875rem;
+  }
+  main #main-content-container #select #select-col_2 #select-col_2-row_2:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
+  }
+  .sidepage-container .sidepage-layout {
+    flex-direction: column;
+  }
+  .sidepage-container .sidepage-layout .submenu {
+    width: 100%;
+    padding-top: 0px;
+    border-bottom: 8px solid #262626;
+  }
+  .sidepage-container .sidepage-layout .content {
+    padding-bottom: 16px;
+  }
+  .sidepage-container .sidepage-layout .content h1 {
+    margin-left: 32px;
+    margin-right: 32px;
+    font-size: 2.25rem;
+  }
+  .sidepage-container .sidepage-layout .content p {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  footer #footer-container #footer-logo {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  header #top #logo-container {
+    transform: scale(0.85);
+    margin-top: 38px;
+    margin-left: 0px;
+  }
+  header #top #title {
+    margin-left: 0px;
+  }
+  header #top #title h1 {
+    font-size: 1.25rem;
+  }
+  header #top #title h2 {
+    font-size: 1.125rem;
+  }
+  main #main-content-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 360px) {
+  header #top #title {
+    margin-left: -10px;
+  }
+}
+#nav-container-mobile {
+  display: none;
+}
+#nav-container-mobile #nav-button-container {
+  margin: 0 auto;
+  background-color: #F3930E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav-container-mobile #nav-button-container #nav-border-left {
+  width: 40px;
+  height: 60px;
+  background-image: url(/images/nav_border-left.png);
+  background-position: center;
+}
+#nav-container-mobile #nav-button-container #nav-menu-button {
+  width: 35px;
+  height: 24px;
+  background-image: url(/images/nav-menu-mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#nav-container-mobile #nav-button-container #nav-border-right {
+  width: 40px;
+  height: 60px;
+  background-image: url(/images/nav_border-right.png);
+  background-position: center;
+}
+#nav-container-mobile #nav-dropdown-container {
+  margin: 0 auto;
+  background-color: #F3930E;
+}
+#nav-container-mobile #nav-dropdown-container ul {
+  padding: 0px;
+  margin: 0px;
+}
+#nav-container-mobile #nav-dropdown-container ul li {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav-container-mobile #nav-dropdown-container ul li a {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */

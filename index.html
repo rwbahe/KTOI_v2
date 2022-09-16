@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/ux.js"></script>
     <title>Kootenai Tribe of Idaho</title>
 </head>
 <body>
@@ -38,11 +40,29 @@
                     </ul>
                     <div id="nav-border-right"></div>
                 </div>
+                <!-- mobile nav-container to make hamburger menu work-->
+                <div id="nav-container-mobile">
+                    <div id="nav-button-container">
+                        <div id="nav-border-left"></div>
+                        <div id="nav-menu-button"></div>
+                        <div id="nav-border-right"></div>
+                    </div>
+                    <div id="nav-dropdown-container">
+                        <ul>
+                            <li><a href="about-home.html">About</a></li>
+                            <li><a href="gov-home.html">Government</a></li>
+                            <li><a href="fish-home.html">Fish & Wildlife</a></li>
+                            <li><a href="inn-home.html">Kootenai River Inn</a></li>
+                            <li><a href="resort-home.html">Twin River Resort</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!---------------------------------------------------->
             </div>
         </header>
         
         <main>
-            <div>
+            <div id="main-content-container">
                 <div id="intro">
                     <div id="intro-title">
                         <div id="intro-title-acc"></div>
@@ -65,34 +85,34 @@
                 <div id="select">
                     <div id="select-col_1">
                         <div id="select-col_1-col_1">
-                            <div id="select-col_1-col_1-row_1">
+                            <a href= "about-history.html" id="select-col_1-col_1-row_1">
                                 <div id="select_1_1_1-history">
                                     <h4>History</h4>
                                 </div>
-                            </div>
-                            <div id="select-col_1-col_1-row_2">
+                            </a>
+                            <a href="about-covenant.html" id="select-col_1-col_1-row_2">
                                 <div id="select_1_1_2-covenant">
                                     <h4>The Creator's Covenant</h4>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        <div id="select-col_1-col_2">
+                        <a href="fish-home.html" id="select-col_1-col_2">
                             <div id="select_1_2-fishwild">
                                 <h4>Fish & Wildlife</h4>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div id="select-col_2">
-                        <div id="select-col_2-row_1">
+                        <a href="inn-home.html" id="select-col_2-row_1">
                             <div id="select_2_1-inn">
                                 <h4>Inn Casino & Spa</h4>
                             </div>
-                        </div>
-                        <div id="select-col_2-row_2">
+                        </a>
+                        <a href="resort-home.html" id="select-col_2-row_2">
                             <div id="select_2_2-resort">
                                 <h4>Twin Rivers Resort</h4>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 
