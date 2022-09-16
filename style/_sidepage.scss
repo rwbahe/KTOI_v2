@@ -1,6 +1,6 @@
 .sidepage-container {
     background-color: $sidepage-content;
-    background-image: url(images/default_background-1.png);
+    background-image: url(../images/default_background-1.png);
     margin: 0 auto;
 
     .sidepage-layout {
@@ -47,7 +47,7 @@
                     #tag {
                         width: 6px;
                         height: 24px;
-                        background-image: url(images/submenu-link-tag.png);
+                        background-image: url(../images/submenu-link-tag.png);
                     }
                 }
             }

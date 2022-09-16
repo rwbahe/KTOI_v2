@@ -41,7 +41,7 @@ header {
             height: 140px;
             margin-top: 60px;
             margin-left: 1.04166667%; /* 20px / 1920px */
-            background-image: url(images/logo_container-background.png);
+            background-image: url(../images/logo_container-background.png);
             z-index: 1;
 
             #logo {
@@ -49,7 +49,7 @@ header {
                 height: 100px;
                 margin-top: 6px;
                 margin-left: 75px;
-                background-image: url(images/logo.png);
+                background-image: url(../images/logo.png);
             }
         }
 
@@ -71,7 +71,7 @@ header {
         margin-left: auto; 
         margin-right: auto; 
         position: absolute;
-        background-image: url(images/top_border-bottom.png);
+        background-image: url(../images/top_border-bottom.png);
     }
 
     #banner {
@@ -79,7 +79,7 @@ header {
         max-width: 1920px;
         height: 360px;
         margin: 0 auto;
-        background-image: url(images/banner-background-placehold.jpg);
+        background-image: url(../images/banner-background-placehold.jpg);
         background-position: center;
     }
 
@@ -103,7 +103,7 @@ header {
             #nav-border-left {
                 width: 40px;
                 height: 70px;
-                background-image: url(images/nav_border-left.png);
+                background-image: url(../images/nav_border-left.png);
             }
     
             ul {
@@ -147,7 +147,7 @@ header {
             #nav-border-right {
                 width: 40px;
                 height: 70px;
-                background-image: url(images/nav_border-right.png);
+                background-image: url(../images/nav_border-right.png);
             }
         }
     }
@@ -178,7 +178,7 @@ footer {
         #footer-logo {
             width: 240px;
             height: 140px;
-            background-image: url(images/footer_logo.png);
+            background-image: url(../images/footer_logo.png);
             margin-right: 32px;
         }
     }
@@ -602,14 +602,14 @@ footer {
         #nav-border-left {
             width: 40px;
             height: 60px;
-            background-image: url(images/nav_border-left.png);
+            background-image: url(../images/nav_border-left.png);
             background-position: center;
         }
 
         #nav-menu-button {
             width: 35px;
             height: 24px;
-            background-image: url(images/nav-menu-mobile.png);
+            background-image: url(../images/nav-menu-mobile.png);
             background-position: center;
             background-repeat: no-repeat;
         }
@@ -617,7 +617,7 @@ footer {
         #nav-border-right {
             width: 40px;
             height: 60px;
-            background-image: url(images/nav_border-right.png);
+            background-image: url(../images/nav_border-right.png);
             background-position: center;
         }
     }
