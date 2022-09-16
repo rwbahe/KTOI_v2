@@ -1,7 +1,7 @@
 main {
   width: 100%;
   background-color: #FFF9F0;
-  background-image: url(/images/homepage_main-background.png);
+  background-image: url(images/homepage_main-background.png);
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -90,7 +90,7 @@ main #main-content-container #select #select-col_1 #select-col_1-col_1 {
 }
 main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_1 {
   flex: 1;
-  background-image: url(/images/history-cover-placehold.jpg);
+  background-image: url(images/history-cover-placehold.jpg);
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -113,7 +113,7 @@ main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-c
 }
 main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-col_1-col_1-row_2 {
   flex: 1;
-  background-image: url(/images/covenant-cover-placehold.jpg);
+  background-image: url(images/covenant-cover-placehold.jpg);
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -137,7 +137,7 @@ main #main-content-container #select #select-col_1 #select-col_1-col_1 #select-c
 main #main-content-container #select #select-col_1 #select-col_1-col_2 {
   flex: 1;
   height: 360px;
-  background-image: url(/images/hatchery-cover-placehold.jpg);
+  background-image: url(images/hatchery-cover-placehold.jpg);
   background-position: center;
 }
 main #main-content-container #select #select-col_1 #select-col_1-col_2 #select_1_2-fishwild {
@@ -168,7 +168,7 @@ main #main-content-container #select #select-col_2 #select-col_2-row_1 {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
   transform: translateY(36px);
-  background-image: url(/images/hotel-cover-placehold.jpg);
+  background-image: url(images/hotel-cover-placehold.jpg);
   background-position: center;
 }
 main #main-content-container #select #select-col_2 #select-col_2-row_1 #select_2_1-inn {
@@ -194,7 +194,7 @@ main #main-content-container #select #select-col_2 #select-col_2-row_2 {
   -webkit-clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
   transform: translateY(-36px);
-  background-image: url(/images/resort-cover-placehold.jpg);
+  background-image: url(images/resort-cover-placehold.jpg);
   background-position: center;
   display: flex;
   justify-content: flex-end;
@@ -222,7 +222,7 @@ main #main-content-container #select #select-col_2 #select-col_2-row_2:hover {
 
 .sidepage-container {
   background-color: #FFF9F0;
-  background-image: url(/images/default_background-1.png);
+  background-image: url(images/default_background-1.png);
   margin: 0 auto;
 }
 .sidepage-container .sidepage-layout {
@@ -262,7 +262,7 @@ main #main-content-container #select #select-col_2 #select-col_2-row_2:hover {
 .sidepage-container .sidepage-layout .submenu .submenu-container .link #tag {
   width: 6px;
   height: 24px;
-  background-image: url(/images/submenu-link-tag.png);
+  background-image: url(images/submenu-link-tag.png);
 }
 .sidepage-container .sidepage-layout .content {
   width: 100%;
@@ -324,7 +324,7 @@ header #top #logo-container {
   height: 140px;
   margin-top: 60px;
   margin-left: 1.04166667%; /* 20px / 1920px */
-  background-image: url(/images/logo_container-background.png);
+  background-image: url(images/logo_container-background.png);
   z-index: 1;
 }
 header #top #logo-container #logo {
@@ -332,7 +332,7 @@ header #top #logo-container #logo {
   height: 100px;
   margin-top: 6px;
   margin-left: 75px;
-  background: url(/images/logo.png);
+  background-image: url(images/logo.png);
 }
 header #top #title {
   margin-left: 1.04166667%; /* 20px / 1920px */
@@ -353,14 +353,14 @@ header #top-border-bottom {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  background-image: url(/images/top_border-bottom.png);
+  background-image: url(images/top_border-bottom.png);
 }
 header #banner {
   width: 100%;
   max-width: 1920px;
   height: 360px;
   margin: 0 auto;
-  background-image: url(/images/banner-background-placehold.jpg);
+  background-image: url(images/banner-background-placehold.jpg);
   background-position: center;
 }
 header #nav {
@@ -382,7 +382,7 @@ header #nav #nav-container {
 header #nav #nav-container #nav-border-left {
   width: 40px;
   height: 70px;
-  background-image: url(/images/nav_border-left.png);
+  background-image: url(images/nav_border-left.png);
 }
 header #nav #nav-container ul {
   padding: 0px;
@@ -416,7 +416,7 @@ header #nav #nav-container ul li:hover {
 header #nav #nav-container #nav-border-right {
   width: 40px;
   height: 70px;
-  background-image: url(/images/nav_border-right.png);
+  background-image: url(images/nav_border-right.png);
 }
 
 footer {
@@ -442,7 +442,7 @@ footer #footer-container #info {
 footer #footer-container #footer-logo {
   width: 240px;
   height: 140px;
-  background-image: url(/images/footer_logo.png);
+  background-image: url(images/footer_logo.png);
   margin-right: 32px;
 }
 
@@ -712,20 +712,20 @@ footer #footer-container #footer-logo {
 #nav-container-mobile #nav-button-container #nav-border-left {
   width: 40px;
   height: 60px;
-  background-image: url(/images/nav_border-left.png);
+  background-image: url(images/nav_border-left.png);
   background-position: center;
 }
 #nav-container-mobile #nav-button-container #nav-menu-button {
   width: 35px;
   height: 24px;
-  background-image: url(/images/nav-menu-mobile.png);
+  background-image: url(images/nav-menu-mobile.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 #nav-container-mobile #nav-button-container #nav-border-right {
   width: 40px;
   height: 60px;
-  background-image: url(/images/nav_border-right.png);
+  background-image: url(images/nav_border-right.png);
   background-position: center;
 }
 #nav-container-mobile #nav-dropdown-container {
