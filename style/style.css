@@ -18,7 +18,6 @@ main #main-content-container #intro {
   border-top: 8px solid #F3930E;
   background-color: #FFF;
   box-shadow: 0 0 32px #ccc;
-  z-index: 1;
 }
 main #main-content-container #intro #intro-title {
   margin-top: 40px;
