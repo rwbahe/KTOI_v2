@@ -6,13 +6,12 @@
     .sidepage-layout {
         width: 62.5%; /* 1200px / 1920px */
         margin: 0 auto;
-        background-color: #FFF;
     
         display: flex;
         flex-direction: row;
     
         .submenu {
-            width: 200px;
+            width: 16.66666667%; /* 200px / 1200px */
             padding-top: 50px;
             background-color: #444;
     
@@ -47,7 +46,7 @@
                     #tag {
                         width: 6px;
                         height: 24px;
-                        background-image: url(../images/submenu-link-tag.png);
+                        background-color: $tag_sub;
                     }
                 }
             }
@@ -57,22 +56,25 @@
             width: 100%;
             padding-top: 50px;
             padding-bottom: 30px;
+            padding-left: 60px;
+            padding-right: 60px;
             background-color: $sidepage-content;
     
             h1 {
                 display: inline-block;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 padding-bottom: 16px;
                 margin-bottom: 32px;
-                margin-left: 50px;
-                margin-right: 50px;
                 border-bottom: 2px solid $page-title-border;
+            }
+
+            h4 {
+                font-size: 1.125rem;
+                margin-bottom: 8px;
             }
     
             p {
                 margin-bottom: 32px;
-                margin-left: 50px;
-                margin-right: 50px;
                 overflow-wrap: break-word;
             }
         }
