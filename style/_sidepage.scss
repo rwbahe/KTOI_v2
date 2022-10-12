@@ -76,8 +76,44 @@
             p {
                 margin-bottom: 32px;
                 overflow-wrap: break-word;
+                color: #333;
             }
         }
     }
 }
 
+//About-Covenant
+#covenant-image {
+    width: 280px;
+    height: 400px;
+    background-image: url(../images/logo-large.png);
+}
+
+#covenant-meaning {
+    list-style: circle;
+}
+
+//About-Contact 
+#office-hours{
+    display: flex;
+    flex-direction: row;
+}
+
+//Gov-Legal
+#code-download {
+    height: 60px;
+    margin-top: 16px;
+    border-radius: 4px;
+    background-color: #888;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#code-icon {
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/pdf-icon_48x48.png);
+}

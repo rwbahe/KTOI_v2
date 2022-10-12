@@ -52,6 +52,7 @@ main #main-content-container #intro #intro-content {
 }
 main #main-content-container #intro #intro-content p {
   margin-bottom: 32px;
+  color: #333;
 }
 main #main-content-container #select {
   display: flex;
@@ -267,10 +268,42 @@ main #main-content-container #select #select-col_2 #select-col_2-row_2:hover {
 .sidepage-container .sidepage-layout .content p {
   margin-bottom: 32px;
   overflow-wrap: break-word;
+  color: #333;
+}
+
+#covenant-image {
+  width: 280px;
+  height: 400px;
+  background-image: url(../images/logo-large.png);
+}
+
+#covenant-meaning {
+  list-style: circle;
+}
+
+#office-hours {
+  display: flex;
+  flex-direction: row;
+}
+
+#code-download {
+  height: 60px;
+  margin-top: 16px;
+  border-radius: 4px;
+  background-color: #888;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#code-icon {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/pdf-icon_48x48.png);
 }
 
 * {
-  list-style: none;
   text-decoration: none;
 }
 
@@ -283,6 +316,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 p {
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
